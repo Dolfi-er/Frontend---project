@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Caveat", Arial, Helvetica, sans-serif;
+  
+}
+
+p{
+  text-align: justify;
+  font-size: calc(14px + 1.2vw);
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #0a493f;
+  color: #dafbff;
+}
+tr:nth-child(even) {
+  background-color: #fee4ca;
+}
